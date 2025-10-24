@@ -1,14 +1,12 @@
-/* ====== VARIABLES DE COLOR ====== */
+
 :root {
   --azul: #005f99;
   --verde: #00c16e;
   --blanco: #ffffff;
   --gris: #f5f5f5;
 }
-
-/* ====== HEADER ====== */
 header {
-  position: relative; /* necesario para que el nav se posicione bien */
+  position: relative; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,13 +16,10 @@ header {
   height: 60px;
 }
 
-/* ====== LOGO ====== */
 header .logo img {
   width: 50px;
   height: auto;
 }
-
-/* ====== NAV DESKTOP ====== */
 header nav {
   display: flex;
   gap: 1.5rem;
@@ -57,8 +52,6 @@ header nav a:hover {
 header nav a:hover::after {
   width: 100%;
 }
-
-/* ====== BOTÓN HAMBURGUESA ====== */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -72,14 +65,13 @@ header nav a:hover::after {
   transform: rotate(90deg);
 }
 
-/* ====== MENÚ RESPONSIVE ====== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   header nav {
-    display: none; /* oculto por defecto */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -101,8 +93,6 @@ header nav a:hover::after {
     display: block;
   }
 }
-
-/* ====== ANIMACIÓN MENÚ ====== */
 @keyframes slideDown {
   from {
     opacity: 0;
